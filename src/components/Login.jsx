@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "../utils/constants";
+import bg from "../images/bg.jpg"
 
 const Login = () => {
   const [emailId, setEmailId] = useState("");
@@ -47,7 +48,13 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-center my-10">
+    <div className="min-h-screen" style={{
+      backgroundImage: `url(${bg})`,
+      backgroundSize: 'cover',
+      paddingTop: '5rem', // Space for navbar
+      paddingBottom: '5rem', // Space for footer
+    }}>
+    <div className="flex justify-center my-10" >
       <div className="card bg-base-300 w-96 shadow-xl">
         <div className="card-body">
           <h2 className="card-title justify-center">
@@ -123,6 +130,7 @@ const Login = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

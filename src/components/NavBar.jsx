@@ -24,7 +24,7 @@ const NavBar = () => {
 
   
   return (
-    <div className="navbar bg-neutral text-neutral-content">
+    <div className="navbar bg-rose-800 text-neutral-content">
     <div className="flex-1">
       <Link to="/" className="btn btn-ghost text-xl">👨🏻‍💻 DevTinder</Link>
     </div>
